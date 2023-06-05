@@ -1,0 +1,24 @@
+create database escola1;
+
+use escola1;
+
+create table turma(
+id_turma int,
+alunos char (40),
+sala int,
+professores char (40),
+primary key (id_turma));
+
+create table professor(
+id_professor int,
+nome char (60),
+email varchar (60),
+tlefone int (11),
+primary key(id_professor));
+
+create table sala(
+id_sala int,
+blocos varchar(10),
+turmas varchar (3),
+cursos char (80),
+primar key (id_sala));
